@@ -1,0 +1,155 @@
+@import url(../modal/__input/modal__input.css);
+@import url(../modal/__icon/modal__icon.css);
+@import url(../modal/__btn/modal__btn.css);
+
+.form {
+  display: flex;
+  width: 430px;
+  height: 330px;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visiblity 0.4s;
+}
+
+.modal__box {
+  position: relative;
+  width: 430px;
+  height: 330px;
+  background-image: url(/images/Rectangle.jpg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -7px Orgba(34, 60, 80, 0.2);
+  transform: scale(0);
+  transition: transform 0.8s;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  transform: scale(1);
+  transition: transform 0.8s;
+}
+
+.modal__container {
+  margin: 34px 36px 37px 36px;
+  max-width: 358px;
+}
+
+.modal__name {
+  margin: 0px;
+  padding-bottom: 54px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.modal__field {
+  width: 358px;
+  height: 27px;
+}
+
+.modal__field__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    position: absolute;
+    top: 97px;
+  }
+  .modal__box {
+    width: 282px;
+    height: 322px;
+  }
+  .modal__field {
+    width: 238px;
+  }
+  .modal__field__container {
+    display: flex;
+    align-items: center;
+  }
+  .modal__name {
+    width: 238px;
+    height: 22px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 75px;
+  }
+  .modal__container {
+    margin: 22px 25px;
+  }
+}
+
+#modal-container {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#modal {
+  position: relative;
+}
+
+#close-my-modal-btn2 {
+  background-image: url(/images/Close\ Icon.svg);
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 5px;
+}
+
+#modal-image {
+  max-width: 100%;
+  max-height: 540px;
+}
+
+.open {
+  visibility: visible;
+}

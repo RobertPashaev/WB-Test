@@ -1,0 +1,20 @@
+@import url(../elements/__grid/elements__grid.css);
+@import url(../elements/__text/elements__text.css);
+@import url(../elements/__btn_like/elements__btn_like.css);
+
+.elements {
+  margin: 0;
+  width: 880px;
+  height: 744px;
+  margin-top: 51px;
+}
+
+@media screen and (max-width: 400px) {
+  .elements {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 99px;
+    width: 282px;
+    height: 2268px;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <img alt="MestoLogo" src="images/logo.svg" class="header__logo" />
+        <img alt="line" src="images/Line.svg" class="header__line" />
+      </header>
+      <div class="modal" id="my-modal">
+        <div class="modal__box">
+            <button id="close-my-modal-btn" class="icon_close"></button>
+            <div class="modal__container">
+                <h2 class="modal__name">Редактировать Профиль</h2>
+                <div class="modal__field__container">
+                    <div class="modal__field">
+                        <p class="input__text"><input type="text" name="user"></p>
+                        <img src="images/Line 2.jpg" alt="line" class="modal__line">
+                     </div>
+                     <div class="modal__field">
+                         <p class="input__text"><input type="text" name="user__description"></p>
+                         <img src="images/Line 2.jpg" alt="line" class="modal__line">
+                      </div>
+                </div>
+                 <button class="save__btn">Сохранить</button>
+            </div>
+        </div>
+      </div>
+      <div class="modal modal_add" id="my-modal_add">
+        <div class="modal__box">
+          <button id="close-my-modal-btn_add" class="icon_close icon_close_img"></button>
+          <div class="modal__container">
+            <h2 class="modal__name">Новое место</h2>
+            <div class="modal__field__container">
+              <div class="modal__field">
+                <p class="input__text input__text_add"><input type="text" name="name" placeholder="Название"></p>
+                <img src="images/Line 2.jpg" alt="line" class="modal__line">
+              </div>
+              <div class="modal__field">
+                <p class="input__text input__text_link"><input type="text" name="img_link" placeholder="Ссылка на картинку"></p>
+                <img src="images/Line 2.jpg" alt="line" class="modal__line">
+              </div>
+            </div>
+            <button class="save__btn save__btn_add">Создать</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="modal-container">
+        <div class="modal_img" id="overlay"></div>
+        <div id="modal">
+            <button id="close-my-modal-btn2" class="icon_close"></button>
+          <img id="modal-image">
+        </div>
+      </div>
+     <section class="profile">
+        <div class="profile__container">
+            <div class="profile__avatar">
+                <img 
+                alt="avatar"
+                src="images/image.jpg"
+                class="profile__image">
+            </div>
+            <div class="profile__info">
+                <div class="name">
+                    <h2 class="profile__name" id="name-active">Жак-Ив Кусто</h2>
+                    <button class="profile__btn_edit" id="btnEdit"></button>
+                </div>
+                <p class="discription" id="discription-active">Исследователь океана</p>
+            </div>
+            <div class="profile__btn">
+                
+                <button class="profile__btn_add" id="addBtn"></button>
+            </div>
+        </div>
+     </section>
+     <section class="elements">
+        <div class="elements__grid"> 
+        </div>
+      </section>      
+      </main>
+      <footer class="footer"></footer>
+      <h3 class="footer__text">© 2023 Pashaev Robert</h3>
+      </section>
+    </div>
+    <script defer src="index.js"></script>
+  </body>
+</html>
+
+

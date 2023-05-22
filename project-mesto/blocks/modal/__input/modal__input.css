@@ -1,0 +1,26 @@
+input {
+  border: none;
+  outline: none;
+  width: 358px;
+}
+
+.input__text {
+  margin: 0;
+}
+
+.modal__line {
+  width: 358px;
+  height: 0px;
+  border: solid 1px black;
+  opacity: 0.2;
+  background-color: black;
+}
+
+@media screen and (max-width: 400px) {
+  .modal__line {
+    width: 238px;
+  }
+  .input {
+    width: 238px;
+  }
+}
