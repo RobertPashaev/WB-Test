@@ -1,0 +1,20 @@
+.like {
+  width: 21px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  background-image: url(/src/images/like_button.svg);
+  position: relative;
+  right: -245px;
+  bottom: 65px;
+  cursor: pointer;
+}
+
+.like:hover {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.like.is-liked {
+  background-image: url(/src/images/like_active.svg);
+}

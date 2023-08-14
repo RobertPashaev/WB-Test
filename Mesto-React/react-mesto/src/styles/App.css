@@ -1,0 +1,21 @@
+@import url(../vendor/normalize.css);
+@import url(./header/header.css);
+@import url(./profile/profile.css);
+@import url(./cards/cards.css);
+@import url(./footer/footer.css);
+@import url(./image_popup/image_popup.css);
+@import url(./popup/PopupWithForm.css);
+@import url(./icon/icon_close.css);
+@import url(.//popup/button/buttons.css);
+@import url(./text/modal__text.css);
+
+body {
+  margin: 0 auto;
+  max-width: 880px;
+  width: 100%;
+  background-color: black;
+}
+
+h1 {
+  color: white;
+}

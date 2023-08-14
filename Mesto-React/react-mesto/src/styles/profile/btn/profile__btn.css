@@ -1,0 +1,45 @@
+.profile__info__btn {
+  width: 24px;
+  height: 24px;
+}
+
+.profile__btn {
+  display: flex;
+  margin-left: 245px;
+  align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .profile__btn {
+    display: flex;
+    margin: 0;
+    padding-top: 40px;
+  }
+  .profile__btn_edit {
+    width: 18px;
+    height: 18px;
+  }
+  .profile__btn_add {
+    width: 282px;
+    height: 50px;
+    padding-top: 36px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile__btn {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding-top: 40px;
+  }
+  .profile__btn_edit {
+    width: 20px;
+    height: 20px;
+  }
+  .profile__btn_add {
+    width: 282px;
+    height: 50px;
+    padding-top: 36px;
+  }
+}
