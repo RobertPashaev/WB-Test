@@ -1,0 +1,100 @@
+.profile {
+  width: 880px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  position: relative; /* Добавлено */
+}
+
+.profile__text {
+  font-family: Inter;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  max-width: 275px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0px;
+}
+
+.profile__span {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile__button_edit {
+  background-image: url('../../../public/pen.svg');
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+}
+
+.profile__info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__button_add {
+  background-image: url('../../../public/addButton.svg');
+  width: 150px;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 245px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  cursor: pointer;
+}
+
+.profile__img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.profile__img:hover {
+  opacity: 0.7;
+}
+
+.profile__imgContainer:hover {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 35px;
+  left: 38px;
+  width: 46px;
+  height: 46px;
+  background-image: url('../../../public/avatar-pencil.svg');
+  background-size: cover;
+  cursor: pointer;
+}

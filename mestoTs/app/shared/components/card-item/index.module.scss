@@ -1,0 +1,56 @@
+.card_container {
+  width: 282px;
+  height: 361px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.card__like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card__like_active:active {
+  background-image: url('../../../../public/active-like.svg');
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 5px 35px;
+}
+
+.card__text {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: black;
+}
+
+.card__trash_icon {
+  display: none;
+  &_isOwn {
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+  }
+}
+
+.card__trash_icon:hover {
+  opacity: 0.8;
+}
