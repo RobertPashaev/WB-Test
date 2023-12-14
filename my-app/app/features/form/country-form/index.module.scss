@@ -1,0 +1,24 @@
+.pay_system__field {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  border: 1px solid black;
+  margin-top: 3vh;
+  border-radius: 8px;
+  padding: 2vh;
+}
+
+.text_fields__country {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  border-radius: 8px;
+  padding: 2vh;
+  border: 1px solid black;
+}

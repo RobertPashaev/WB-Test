@@ -1,0 +1,11 @@
+.acquirers_fields {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.acquirers_fields__container {
+  display: flex;
+  flex-direction: column;
+}

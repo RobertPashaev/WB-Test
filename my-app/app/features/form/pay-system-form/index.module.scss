@@ -1,0 +1,17 @@
+.pay_system__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  border: 1px solid black;
+  margin: 2vh;
+  padding: 2vh;
+  border-radius: 8px;
+}
+
+.pay_system__fields {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2vh;
+}

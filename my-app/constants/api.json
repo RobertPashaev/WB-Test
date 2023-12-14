@@ -1,0 +1,51 @@
+[
+  {
+    "Country": "UZB",
+    "Currency": "860",
+    "Acquirers": [
+      {
+        "Percent": 30,
+        "PS": [
+          {
+            "Rate": 3,
+            "Name": "visa,mastercard"
+          },
+          {
+            "Rate": 1.5,
+            "Name": "humo,uzcard"
+          }
+        ],
+        "Name": "paybox"
+      },
+      {
+        "Percent": 70,
+        "PS": [
+          {
+            "Rate": 1,
+            "Name": "humo,uzcard"
+          }
+        ],
+        "Name": "uzcard"
+      }
+    ]
+  },
+  {
+    "Country": "KGZ",
+    "Currency": "417",
+    "Acquirers": [
+      {
+        "PS": [
+          {
+            "Rate": 2.5,
+            "Name": "visa,mastercard,maestro"
+          },
+          {
+            "Rate": 1.5,
+            "Name": "elcard"
+          }
+        ],
+        "Name": "paybox"
+      }
+    ]
+  }
+]
