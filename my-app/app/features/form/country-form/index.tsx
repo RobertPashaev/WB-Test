@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { memo, useCallback } from 'react';
 import { useForm, useFieldArray, FormProvider } from 'react-hook-form';
 import { Button, Typography } from '@mui/material';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -26,16 +26,19 @@ export const CountryForm = memo(({ init, disabled, onSubmit }: Props) => {
     control: methods.control,
   });
 
-  const handleSubmit = (data: ModalForm) => {
-    if (methods.formState.dirtyFields.Country && parseResult.success) {
-      if (parseResult.data.some(el => el.Country === data.Country)) {
-        methods.setError('Country', { message: 'Страна с таким именем уже есть.' });
-        return;
+  const handleSubmit = useCallback(
+    (data: ModalForm) => {
+      if (methods.formState.dirtyFields.Country && parseResult.success) {
+        if (parseResult.data.some(el => el.Country === data.Country)) {
+          methods.setError('Country', { message: 'Страна с таким именем уже есть.' });
+          return;
+        }
       }
-    }
 
-    onSubmit(data);
-  };
+      onSubmit(data);
+    },
+    [methods, onSubmit],
+  );
 
   return (
     <FormProvider

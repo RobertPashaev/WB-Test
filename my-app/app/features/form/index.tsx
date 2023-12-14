@@ -9,12 +9,12 @@ import { ModalForm } from '@/types';
 export const EditorHookForm = memo(() => {
   const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
+  const handleClickOpen = useCallback(() => {
     setOpen(true);
-  };
-  const handleClose = () => {
+  }, []);
+  const handleClose = useCallback(() => {
     setOpen(false);
-  };
+  }, []);
 
   const handleSubmit = useCallback((data: ModalForm) => {
     // eslint-disable-next-line no-console

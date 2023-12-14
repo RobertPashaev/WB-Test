@@ -16,7 +16,7 @@ export const TextFieldForm = memo(({ name, ...props }: Props) => {
   });
 
   const handleonChangeNumber = useCallback(
-    (e: any) => {
+    (e: React.ChangeEvent<HTMLInputElement>) => {
       if (props.type === 'number') {
         const output = parseFloat(e.target.value);
         field.onChange(output);
@@ -27,7 +27,7 @@ export const TextFieldForm = memo(({ name, ...props }: Props) => {
     [field, props.type],
   );
 
-  const handleValueNumber = useCallback((value: any) => {
+  const handleValueNumber = useCallback((value: number | string) => {
     return Number.isNaN(value) || value === 0 || value === undefined ? '' : value.toString();
   }, []);
 

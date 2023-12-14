@@ -15,9 +15,9 @@ export const CardAutocomplete = memo(({ name }: Props) => {
 
   const methods = useFormContext();
 
-  const handleInputChange = (event: React.SyntheticEvent<Element, Event>, newValue: string) => {
+  const handleInputChange = useCallback((event: React.SyntheticEvent<Element, Event>, newValue: string) => {
     setInputValue(newValue);
-  };
+  }, []);
 
   const handleOnChange = useCallback(
     (event: SyntheticEvent<Element, Event>, newValue: string[]) => {
