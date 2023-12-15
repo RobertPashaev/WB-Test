@@ -1,4 +1,6 @@
 Test task WB-Tech 
+Pay System Editor
 
-npm run buld
+npm i
+npm run build
 npm run start
